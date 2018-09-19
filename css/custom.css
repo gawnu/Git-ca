@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body html{ -webkit-font-smoothing: antialiased;}
+.ca-form-sign-in input{height: 50px;box-shadow: inset 0px 0px 0px 0px red;background: #F8F9FA;border: 0px;border-bottom: 3px solid #62C0FF;}
+.ca-form-pwd-reminder{  position: absolute; top: 0; right: 0; font-size: 12px; color: #8C96A9; -webkit-transition: color .2s ease; transition: color .2s ease;}
+.ca-form-row{position:relative;}
+.error {color:#FF3939;}
+.serify-font{font-family: 'Playfair Display', serif;line-height: 1.1em;}
+p{line-height: 2em}
+.menu li span{ color:#ffffff;}
+.sticky-topbar{ width: 100%;}
+.logo{ height: 30px; width: auto}
+li.menu-text .logo{padding-right: 10px}
+
+.top-bar, .top-bar ul{background: #0071BC!important}
+.top-bar li a{color: #ffffff!important;line-height:38px;font-size: 14px}
+
+.ca-darker-blue{color:#123E5C}
+.ca-dark-blue{color:#0071BC;}
+.ca-blue-light{color:#62C0FF;}
+
+.ca-grey{color: #B5B5B5}
+
+#main-menu{padding: 10px 150px}
+
+body{ background: #cfcfcf; }
+.add-radius{border-radius: 50px;margin-top:12px}
+
+  /* sticky menu */
+
+  @media screen and (max-width: 39.9375em) {
+    .no-js .top-bar {
+      display: none;
+    }
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .no-js .title-bar {
+      display: none;
+    }
+  }
+
+  [data-sticky] {
+    width: 100%;
+  }
+
+  .sticky-container {
+    z-index: 5;
+  }
+
+
+  /* Hero Image */
+  .hero-section {
+    background: url("../img/polygon-bg.png") 50% no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .hero-section .hero-section-text {
+    color: #fefefe;
+    /* text-shadow: 0px 0px 1px #0a0a0a; */
+  }
+
+  /* background gradient */
+  .bg-btm-gradient {
+      position: absolute;
+
+      z-index: 1;
+      height: 30%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: -webkit-linear-gradient(bottom,rgba(0,0,0,.4) 50%,rgba(0,0,0,0));
+      background: linear-gradient(to top,rgba(0,0,0,.4) 50%,rgba(0,0,0,0));
+  }
+
+  .bg-top-gradient {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      height: 33%;
+      top: 0;
+      margin: 0 auto;
+      background: -webkit-linear-gradient(top,rgba(0,0,0,.4) 50%,rgba(0,0,0,0));
+      background: linear-gradient(to bottom,rgba(0,0,0,.4) 50%,rgba(0,0,0,0));
+    }
+
+    .blue-gradient{
+      background: #0071bc; /* Old browsers */
+      background: -moz-linear-gradient(top, #0071bc 0%, #389ee0 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #0071bc 0%,#389ee0 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #0071bc 0%,#389ee0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071bc', endColorstr='#389ee0',GradientType=0 ); /* IE6-9 */
+    }
+
+    /* form elements */
+    .ca-form-sign-in{display:table-cell;vertical-align:middle}
+
+    /* Small only */
+    @media screen and (max-width: 39.9375em) {
+      .logo-small{padding: 20px 40px}
+    }
+
+    /* Medium and up */
+    @media screen and (min-width: 40em) {
+
+    }
+
+    /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+    }
+
+    /* Large and up */
+    @media screen and (min-width: 64em) {
+        .dlg-sign-in{padding:0px}
+        .logo-large{position:fixed; top:10px; padding: 15px 0 0 30px;}
+
+        .ca-testimony{bottom: 100px;position: relative;margin-top: 80vh;padding: 35px;}
+        .ca-testimony p{color:#ddd;line-height:2em;font-style:italic;}
+        .ca-testimony h6{color:#ccc;line-height:2em;font-weight:bold}
+
+        .dlg-sign-in .quote-bg{height: 100vh;width:600px!important;overflow:hidden}
+        .quote-bg{display:table-cell;background-image: url(../img/andy-law.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;}
+
+    }
+
+    /* Large only */
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+    }
+
+    /* accessibility */
+    .user-select-no{
+      -webkit-user-select: none; /* Chrome/Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+ */
+
+      /* Rules below not implemented in browsers yet */
+      -o-user-select: none;
+      user-select: none;
+    }
+
+    /* override section */
+    .v-height-100{
+      height: 100vh!important;
+    }
